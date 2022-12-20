@@ -1,4 +1,62 @@
+*{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding-top: 64px;
+}
+
 .navbar {
     background-color: white;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.home h3{
+    font-size: 48px;
+}
+
+.home h1{
+    font-size: 72px;
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 4px 20px;
+    font-weight: bold;
+}
+
+.home .btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.home .arrow{
+    margin-top: 64px;
+}
+
+.home .arrow img{
+    margin-top: 8px;
+    width: 30px;
+}
+
+#arrow{
+    animation: 1s upDownArrow infinite;
+}
+
+@keyframes upDownArrow{
+    0%{
+        transform: translateY(0);
+    }
+    /* 25%{
+        transform: translateY(10px);
+    } */
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
