@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand fs-1 fw-bold" href="#">John Doe</a>
+          <a class="navbar-brand fs-1 fw-bold" href="#">Kevin Anderson,S.Kom.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,17 +38,53 @@
         <div class="row d-flex align-items-center justify-content-between">
             <div class="col-8">
                 <h3 class="fw-semibold">Hi! I Am</h3>
-                <h1 class="fw-bold">John Doe</h1>
-                <p>A Software Engineer based in Indonesia</p>
-                <a class="btn" href="images/potrait.png" download>Resume</a>
+                <h1 class="fw-bold">Kevin Anderson</h1>
+                <p>A Front-end developer based in Indonesia</p>
+                <a class="btn btn-resume" href="images/potrait.png" download>Resume</a>
             </div>
             <div class="col-4 d-flex justify-content-end">
-                <img src="images/potrait.png" alt="Portrait">
+                <img src="images/potrait.png" alt="Portrait" class="profile">
             </div>
         </div>
         <div class="arrow d-flex flex-column align-items-center">
             <a class="text-decoration-none text-dark" href="#about">More Info</a>
             <img src="images/arrow.svg" alt="arrow icon" id="arrow">
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis quod quos dicta veniam ipsum cumque libero ipsam error blanditiis quaerat, sunt doloremque dolorem ipsa dolores officiis repudiandae in magni?</p>
+        <div class="about-exp">
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+              <div>
+                <h5>Software Engineer</h5>
+                <p>Coding Studio (2021 - Now)</p>
+              </div>
+              <button class="btn btn-more" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorum fugiat quis, quidem, odit, recusandae reiciendis repellendus iste consequuntur amet a. Accusamus provident iure at, blanditiis cum minus maxime laudantium.</p>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+              <div>
+                <h5>Computer Science</h5>
+                <p>Coding Studio (2018 - 2021)</p>
+              </div>
+              <button class="btn btn-more" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorum fugiat quis, quidem, odit, recusandae reiciendis repellendus iste consequuntur amet a. Accusamus provident iure at, blanditiis cum minus maxime laudantium.</p>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+              <div>
+                <h5>Software Engineer</h5>
+                <p>Coding Studio (2017-2018)</p>
+              </div>
+              <button class="btn btn-more" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorum fugiat quis, quidem, odit, recusandae reiciendis repellendus iste consequuntur amet a. Accusamus provident iure at, blanditiis cum minus maxime laudantium.</p>
+          </div>
         </div>
     </section>
 
