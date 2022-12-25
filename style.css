@@ -161,5 +161,45 @@ section::before{
     content: 'Mobile Project';
 }
 
+/* ------------ Contact ----------- */
+.contact::before{
+    content: 'Contact';
+}
+
+/* .contact .contact-description{
+    width: 70%;
+} */
+
+.contact img{
+    width: 48px;
+}
+.contact p{
+    font-weight: bold;
+}
+
+.contact .form-group{
+    border: 2px solid rgba(0, 0, 0, .25);
+    width: 50%;
+    padding: 16px;
+}
+
+.form-group .form-label{
+    font-weight: bold;
+}
+
+.form-group .form-control{
+    border-radius: 0;
+    border: 2px solid rgba(0, 0, 0, .25);
+
+}
+
+.form-group .btn-submit{
+    text-align: center;
+}
+
+
+
+
+
 
 
