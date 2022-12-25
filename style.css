@@ -2,9 +2,17 @@
     scroll-behavior: smooth;
 }
 
+header{
+    padding-top: 128px;
+}
+
 section{
     padding-top: 128px;
     position: relative;
+}
+
+section .about, section .work, section .contact{
+    display: none;
 }
 
 section::before{
@@ -24,6 +32,8 @@ section::before{
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
+/* --------------------- Home ------------------ */
+
 .home h3{
     font-size: 48px;
 }
@@ -32,7 +42,7 @@ section::before{
     font-size: 72px;
 }
 
-.btn{
+.home .btn .btn-resume{
     text-decoration: none;
     color: black;
     border: 3px solid black;
@@ -41,11 +51,15 @@ section::before{
     font-weight: bold;
 }
 
-.btn:hover{
+.home .btn .btn-resume:hover{
     border: 3px solid black;
     padding: 4px 20px;
     background-color: black;
     color: white;
+}
+
+.home .profile-picture img{
+    width: 100%;
 }
 
 .home .arrow{
@@ -61,21 +75,6 @@ section::before{
     animation: 1s upDownArrow infinite;
 }
 
-@keyframes upDownArrow{
-    0%{
-        transform: translateY(0);
-    }
-    /* 25%{
-        transform: translateY(10px);
-    } */
-    50%{
-        transform: translateY(5px);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
-
 /* ----------------- About ----- */
 .about::before{
     content: 'About';
@@ -87,7 +86,15 @@ section::before{
     align-items: center;
 }
 
-.btn.btn-more:hover, .btn.btn-more.active {
+.about .btn-more{
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 4px 20px;
+    font-weight: bold;
+}
+
+.about .btn-more:hover, .about .btn-more.active {
     border: 3px solid black;
     background-color: black;
     color: white;
@@ -183,19 +190,109 @@ section::before{
     padding: 16px;
 }
 
-.form-group .form-label{
+.contact .form-group .form-label{
     font-weight: bold;
 }
 
-.form-group .form-control{
+.contact .form-group .form-control{
     border-radius: 0;
     border: 2px solid rgba(0, 0, 0, .25);
 
 }
 
-.form-group .btn-submit{
+.contact .form-group .btn-submit {
     text-align: center;
 }
+
+.contact .form-group .btn-submit button{
+    border: 3px solid black;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 4px 20px;
+}
+
+/* -------------- Footer --------------- */
+footer div{
+    height: 100px;
+}
+
+/* ------------------------- Annimation & Media query ----------/ */
+@media only screen and (max-width: 1250px){
+    section::before{
+        left: -20px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    section::before{
+        left: -10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    section::before{
+        left: auto;
+    }
+
+    .navbar .container a{
+        width: 100%;
+
+    }
+
+    .home .profile{
+        padding-top: 64px;
+    }
+
+    .home .profile .profile-text-center{
+        text-align: center;
+    }
+
+    .home .profile h3{
+        font-size: 24px;
+    }
+
+    .home .profile h1{
+        font-size: 48px;
+    }
+
+    .home .profile p{
+        font-size: 16px;
+    }
+
+    .home .profile-picture{
+        display: flex;
+        justify-content: center;
+    }
+    .home .profile-picture img{
+        width: 50%;
+    }
+
+    .home .btn{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+
+}
+
+@keyframes upDownArrow{
+    0%{
+        transform: translateY(0);
+    }
+    /* 25%{
+        transform: translateY(10px);
+    } */
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
 
 
 
